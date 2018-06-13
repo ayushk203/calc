@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+ <head>
+   <style type="text/css">
+     body{
+	      background-image:url(abs1.jpg);
+		  }
+   
+      .calc{
+	         background-color:black;
+			 margin-left:30%;
+			 width:510px;
+			 padding-left:10px;
+			 padding-top:10px;
+			 padding-bottom:10px;
+			 border-radius:30px;
+		   }
+	  #button{
+			 height:80px;
+	     	 width:80px;
+			 font-size:25px;
+			 border-radius:50%;
+			 }
+	  #button:hover{
+	            background-color:black;
+	            color:white;
+			   }
+   </style>
+   <script src="javascript.js"></script>
+ <title>
+    Calculator
+ </title>
+ </head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<body>
+  <form name="frm" class="calc">
+   <input type="text" name="txt" id="text" style="width:490px;height:100px;border-radius:10px;text-align:right;font-size:35px"><br/><br/>
+   <input type="button" id="button" name="btnlpar" value="(" onclick="display(btnlpar.value)">
+   <input type="button" id="button" name="btnrpar" value=")" onclick="display(btnrpar.value)">
+   <input type="button" id="button" name="btnsin" value="sin(" onclick="display(btnsin.value)">
+   <input type="button" id="button" name="btncos" value="cos(" onclick="display(btncos.value)">
+   <input type="button" id="button" name="btntan" value="tan(" onclick="display(btntan.value)">
+   <input type="button" id="button" name="btnln" value="ln(" onclick="display(btnln.value)"><br/>
+   <input type="button" id="button" name="btn7" value="7" onclick="display(btn7.value)">
+   <input type="button" id="button" name="btn8" value="8" onclick="display(btn8.value)">
+   <input type="button" id="button" name="btn9" value="9" onclick="display(btn9.value)">
+   <input type="button" id="button" name="btnmul" value="*" onclick="display(btnmul.value)">
+   <input type="button" id="button" name="btnac" value="C" onclick="clean()">
+   <input type="button" id="button" name="btnlog" value="log(" onclick="display(btnlog.value)"><br/>
+   <input type="button" id="button" name="btn4" value="4" onclick="display(btn4.value)">
+   <input type="button" id="button" name="btn5" value="5" onclick="display(btn5.value)">
+   <input type="button" id="button" name="btn6" value="6" onclick="display(btn6.value)">
+   <input type="button" id="button" name="btnadd" value="+" onclick="display(btnadd.value)">
+   <input type="button" id="button" name="btndel" value="del" onclick="del()">
+   <input type="button" id="button" name="btnsqrt" value="sqrt(" onclick="display(btnsqrt.value)"><br/>
+   <input type="button" id="button" name="btn1" value="1" onclick="display(btn1.value)">
+   <input type="button" id="button"  name="btn2" value="2" onclick="display(btn2.value)">
+   <input type="button" id="button" name="btn3" value="3" onclick="display(btn3.value)">
+   <input type="button" id="button" name="btnmi" value="-" onclick="display(btnmi.value)">
+   <input type="button" id="button" name="btndiv" value="/" onclick="display(btndiv.value)">
+   <input type="button" id="button" name="btnpow" value="pow(" onclick="display(btnpow.value)"><br/>
+   <input type="button" id="button" name="btn0" value="0" onclick="display(btn0.value)">
+   <input type="button" id="button" name="btndot" value="." onclick="display(btndot.value)">
+   <input type="button" id="button" name="btneq" value="=" onclick="display(btneq.value)">
+   <input type="button" id="button" name="pi" value="pi" onclick="frm.txt.value+=Math.PI">
+   <input type="button" id="button" name="e" value="e" onclick="frm.txt.value+=Math.E">
+   <input type="button" id="button" name="btnexp" value="exp(" onclick="display(btnexp.value)"><br/>
+   <input type="button" id="button" name="btncom" value="," onclick="display(btncom.value)">
+   <input type="button" id="button" name="btnlcm" value="lcm(" onclick="display(btnlcm.value)">
+   <input type="button" id="button" name="btnhcf" value="hcf(" onclick="display(btnhcf.value)">
+   <input type="button" id="button" name="btnfact" value="!" onclick="display(btnfact.value)">
+   <input type="button" id="button" name="btnabs" value="mod" onclick="frm.txt.value=Math.abs(frm.txt.value)">
+   <input type="button" id="button" name="btnrem" value="%" onclick="display(btnrem.value)">
+  </form>
+</body>
+</html>
